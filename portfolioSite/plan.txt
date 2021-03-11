@@ -1,0 +1,28 @@
+Prerequisites:
+
+- Text editor (Will use VS Code. There are others: Atom, Sublime Text, Notepad)
+- Web Browser
+
+
+
+TODOs
+
+1. Build the portfolio project:
+    - Create the folders
+    - Add the files
+    - Connect the files
+
+2. Navbar
+    - 2 Links & Name
+
+3. Portfolio item grid
+    - Images
+    - Titles
+    - Descriptions
+    - Animations
+    - Javascript
+
+4. About Page
+    - Image
+    - Split column layout
+    - Description

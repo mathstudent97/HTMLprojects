@@ -1,0 +1,169 @@
+/* Master Styles*/
+/* body of HTML document. Changed b/c by default, it is set to 8px. */
+
+body {
+	/* Will use Russo One as default, sans serif is back up. */
+	font-family: 'Russo One', sans-serif;
+	margin: 0px;
+}
+
+/* CSS grid aligns items on page; similar to flexbox (done below). */
+/* Want: container to use 'grid' and create template columns using 1fr (fractional unit). */
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+
+
+/* Design Nav bar using flex box. */
+/* Nav styles */
+
+.nav-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 38px;
+}
+
+.left-side {
+	display: flex;
+}
+
+/* Traversing a tree in CSS. Gives style to child elements. */
+.nav-wrapper > .left-side > div {
+	margin-right: 20px;
+	/* 90% */
+	font-size: 0.9em;
+	text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+	height: 22px;
+	border-bottom: 1px solid transparent;
+	/* Animation. */
+	transition: border-bottom 0.5s;
+}
+
+/* nav link wrapper with the a link. */
+.nav-link-wrapper a {
+	color: #8a8a8a;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+
+/* Hover states: */
+/* 1. Hover state for the link. */
+/* Change when hover state occurs. */
+.nav-link-wrapper:hover {
+	border-bottom: 1px solid black;
+}
+
+/* 2. Hover state for the div itself. */
+.nav-link-wrapper a:hover {
+	color: black;
+}
+
+.active-nav-link {
+	border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+	/* '!important' overides the default color behaviour. */
+	color: black !important;
+}
+
+
+/* End of nav bar design. */
+
+
+
+/* Portfolio Styles */
+
+.portfolio-items-wrapper {
+	display: grid;
+	/* Gives each of the columns a full-sized column. */
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+	/* Allows for flexibility. */
+	position: relative;
+}
+
+.portfolio-img-background {
+	height: 350px;
+	/* Width adjusts automatically. */
+	width: 100%;
+	/* Ensures images are cropped so they all sit nicely along eachother. */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+	/* 'postion: absolute' requires parent element 'position: relative' */
+	position: absolute;
+	/* positioned at very top */
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	/* Aligns left to right. */
+	justify-content: center;
+	/* Aligns top to bottom. */
+	align-items: center;
+	/* Full parent height. */
+	height: 100%;
+	text-align: center;
+	padding-left: 100px;
+	padding-right: 100px;
+	
+}
+
+
+
+.img-text-wrapper .subtitle {
+	transition: 1s;
+	font-weight: 600;
+	color: transparent;
+}
+
+/* More specific with selector. */
+.img-text-wrapper:hover .subtitle{
+	color: lightseagreen;
+	font-weight: 600;
+}
+
+/* Darkens image. Want: Animation. */
+/* Javascript will add and remove this class when hovering over this. */
+.img-darken {
+	transition: 1s;
+	filter: brightness(10%);
+}
+
+/* Style the logo image. */
+/* Unified; same size; shrunken. */
+.logo-wrapper img{
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+
+/* About page. */
+.two-column-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img{
+	width: 100%
+}
+
+.profile-content-wrapper {
+	padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+	color: indigo;
+}
+
