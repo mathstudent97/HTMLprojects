@@ -1,0 +1,48 @@
+
+
+
+Required:
+
+- Text Editor (VS Code, Atom, Sublime Text, Notepad)
+- Web browser
+
+
+
+Checklist
+
+1. Buld the project.
+    - creating the folder
+    - adding files
+    - connecting files
+
+2. Navbar.
+    - links & name
+
+3. Portfolio item grid.
+    - images
+    - titles
+    - decriptions
+    - animations
+    - javascript
+
+4. About page.
+    - image
+    - split column layout
+
+
+Some shortcuts to keep in mind, in relation w/ vscode & html files.
+    - "!" for html skeleton
+    - ".placeholder" for a div skeleton
+    - when open html file in browser and select "inspect", you actually see the code layout / developer tool
+        - also gives ability to test out styles.
+            - note: these changes are not permanent, so must go back to actual code / html file to make changes.
+    - "link" for a link skeleton
+    - "a" to link 
+
+
+Some shortcuts to keep in mind, in relation w/ vscode & css files.
+    - ".placeholder" to select a certain class / div to style
+
+
+Other notes.
+    - for free, cool, good quality images check out "unsplash".
