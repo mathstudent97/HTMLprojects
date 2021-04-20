@@ -57,4 +57,48 @@ body {
 /* Portfolio Styles. */
 
 
+.portfolio-items-wrapper {
+    display: grid;
+    /* 3 cols; each 1 with a full-sized column. */
+    grid-template-columns: 1fr 1fr 1fr; 
 
+}
+
+
+.portfolio-item-wrapper {
+    /* allows for more flexibility. */
+    position: relative;
+
+}
+
+
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    /* ensure images are cropped, sitting nicely beside each other. */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    /* left to right */
+    justify-content: center;
+    /* top to bottom */
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+.logo-wrapper-img{
+    width: 50%;
+    margin-bottom: 20px;
+}
