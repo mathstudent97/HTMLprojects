@@ -88,8 +88,9 @@ body {
 
 .portfolio-img-background {
     height: 350px;
+    /* Width adjusts automatically. */
     width: 100%;
-    /* ensure images are cropped, sitting nicely beside each other. */
+    /* Ensure images are cropped, sitting nicely beside each other. */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -97,20 +98,37 @@ body {
 
 
 .img-text-wrapper {
+    /* 'absolute' requires parent element 'relative'. */
     position: absolute;
+    /* Top position. */
     top: 0;
     display: flex;
     flex-direction: column;
-    /* left to right */
+    /* Left to right alignment. */
     justify-content: center;
-    /* top to bottom */
+    /* Top to bottom */
     align-items: center;
+    /*  Full height. */
     height: 100%;
     text-align: center;
     padding-left: 100px;
     padding-right: 100px;
 }
 
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    color: lightseagreen;
+    font-weight: 600;
+}
+
+
+
+/* Image animation. */
 
 .logo-wrapper-img{
     width: 50%;
