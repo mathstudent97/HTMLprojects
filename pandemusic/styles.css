@@ -115,22 +115,52 @@ body {
     padding-right: 100px;
 }
 
-.img-text-wrapper .subtitle {
+.img-text-wrapper .song {
     transition: 1s;
     font-weight: 600;
     color: transparent;
 }
 
-.img-text-wrapper:hover .subtitle {
-    color: lightseagreen;
+.img-text-wrapper:hover .song {
+    color: whitesmoke;
     font-weight: 600;
 }
 
 
 
 /* Image animation. */
+/* Darkens the image. */
+/* Javascript will add and remove this class when hovering over this. */
 
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+/* Style the logo image */
+/* Want: logos to be the same size. */
 .logo-wrapper-img{
     width: 50%;
     margin-bottom: 20px;
+}
+
+
+
+/* About Page. */
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+    color: indigo;
 }
