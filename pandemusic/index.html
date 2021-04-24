@@ -195,10 +195,29 @@
 
             </div>
         </div>
+     </div>
 
 
 
-    </div>
 
 </body>
+
+<!--  Javascript.-->
+<script>
+    // Select the portfolio items.
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+    portfolioItems.forEach(portfolioItem => {
+    // In Javascript, 'hoverover' is 'mouseover'.
+    portfolioItem.addEventListener('mouseover', () => {
+        console.log(portfolioItem.childNodes[1].classList)
+        portfolioItem.childNodes[1].classList.add('img-darken');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+    console.log(portfolioItem.childNodes[1].classList)
+    portfolioItem.childNodes[1].classList.remove('img-darken');
+    });
+    });
+</script>
 </html>
